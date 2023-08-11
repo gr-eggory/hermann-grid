@@ -7,8 +7,8 @@ const main = () => {
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
   setupCanvasSizing(canvas);
 
-  const squareDimension = 50;
-  const gap = 10;
+  const squareDimension = 80;
+  const gap = 15;
 
   const amountOfSquaresX = Math.floor(canvas.width / (squareDimension + gap));
   const amountOfSquaresY = Math.floor(canvas.height / (squareDimension + gap));
