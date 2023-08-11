@@ -1,19 +1,6 @@
 import "./style.css";
 
-const resizeCanvas = (canvas: HTMLCanvasElement) => {
-  console.log("running");
-  const container = document.querySelector(
-    ".canvas-container"
-  ) as HTMLDivElement;
-
-  const containerRect = container.getBoundingClientRect();
-  canvas.width = containerRect.width;
-};
-
-const setupCanvasSizing = (canvas: HTMLCanvasElement) => {
-  resizeCanvas(canvas);
-  window.addEventListener("resize", () => resizeCanvas(canvas));
-};
+import { setupCanvasSizing } from "./logic/canvasSizing";
 
 const main = () => {
   const canvas = document.getElementById("hermann-grid") as HTMLCanvasElement;
