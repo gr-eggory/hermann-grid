@@ -13,6 +13,9 @@ const main = () => {
   const amountOfSquaresX = Math.floor(canvas.width / (squareDimension + gap));
   const amountOfSquaresY = Math.floor(canvas.height / (squareDimension + gap));
 
+  const extraX = canvas.width % (squareDimension + gap);
+  const extraY = canvas.height % (squareDimension + gap);
+
   for (let i = 0; i < amountOfSquaresY; i++) {
     const y = (squareDimension + gap) * i;
 
