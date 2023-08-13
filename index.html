@@ -13,8 +13,56 @@
         <canvas id="hermann-grid" width="400" height="400"></canvas>
       </div>
       <p>
-        The Hermann Grid illusion occurs due to a phenomenon called Lateral
-        Inhibition
+        You should notice faint, dark spots in the intersections of the grid
+        lines in the periphery of your vision. If try to look at any one
+        directly, it vanishes.
+      </p>
+
+      <p>
+        The most common explanation for this is lateral inhibition. The primary
+        drivers of this are retinal ganglion cells
+      </p>
+      <figure>
+        <img
+          src="/public/retinal-ganglion-cell.jpg"
+          alt="retinal ganglion cell diagram"
+        />
+        <figcaption>
+          Source: Gene therapy for retinal ganglion cell neuroprotection in
+          glaucoma by A M Wilson & Di Polo
+        </figcaption>
+      </figure>
+      <p>
+        Retinal ganglion cells (RGCs) are a type of neuron in the eye that
+        receive information from photoreceptors via two intermediary neuron
+        types, bipolar cells and amacrine cells.
+      </p>
+      <p>
+        One RGC receives input from multiple photoreceptors, and this makes up
+        the RGC's receptive field. When photoreceptors in the center of this
+        receptive field detect an increase in luminance, aka more light, they
+        send excitatory signals to the RGC to get it to fire its own signal
+        towards the brain, letting it know that there is something there.
+        However, the photoreceptors on the outside of this photoreceptor cluster
+        send inhibitory signals to the RGC when they detect more light, trying
+        to get it to not fire.
+      </p>
+      <figure>
+        <img
+          src="/public/retinal-ganglion-cells.svg"
+          alt="retinal ganglion cell diagram"
+        />
+        <figcaption>
+          The signals from multiple photoreceptors feed forward into one retinal
+          ganglion cell
+        </figcaption>
+      </figure>
+      <p>
+        Because of this, the intersections have more areas of intense luminosity
+        around them compared to points in the middle of a grid line. The
+        increased peripheral luminosity at the intersections trigger more of the
+        photoreceptors at the edges of a receptive field, causing it to be less
+        activated, and thus the area of vision it controls appears darker.
       </p>
     </div>
     <script type="module" src="/src/main.ts"></script>
