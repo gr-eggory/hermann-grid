@@ -2,10 +2,8 @@ import "./style.css";
 
 import { setupCanvasSizing } from "./logic/canvasSizing";
 
-const main = () => {
-  const canvas = document.getElementById("hermann-grid") as HTMLCanvasElement;
+const drawGrid = (canvas: HTMLCanvasElement) => {
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
-  setupCanvasSizing(canvas);
 
   const squareDimension = 80;
   const gap = 15;
@@ -24,6 +22,12 @@ const main = () => {
       ctx.fillRect(x, y, squareDimension, squareDimension);
     }
   }
+};
+
+const main = () => {
+  const canvas = document.getElementById("hermann-grid") as HTMLCanvasElement;
+  setupCanvasSizing(canvas);
+  drawGrid(canvas);
 };
 
 main();
