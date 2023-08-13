@@ -29,8 +29,33 @@ body {
 #app {
   min-height: 100vh;
   padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.canvas-container {
+  width: 100%;
 }
 
 canvas {
   background-color: white;
+}
+
+figure {
+  width: 50vw;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+}
+
+p {
+  width: 50%;
+  font-size: 22px;
 }
