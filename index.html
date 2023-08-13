@@ -9,9 +9,11 @@
   <body>
     <div id="app">
       <h1>The Hermann Grid Illusion</h1>
+
       <div class="canvas-container">
         <canvas id="hermann-grid" width="400" height="400"></canvas>
       </div>
+
       <p>
         You should notice faint, dark spots in the intersections of the grid
         lines in the periphery of your vision. If try to look at any one
@@ -20,8 +22,9 @@
 
       <p>
         The most common explanation for this is lateral inhibition. The primary
-        drivers of this are retinal ganglion cells
+        drivers of this are retinal ganglion cells.
       </p>
+
       <figure>
         <img
           src="/public/retinal-ganglion-cell.jpg"
@@ -32,11 +35,13 @@
           glaucoma by A M Wilson & Di Polo
         </figcaption>
       </figure>
+
       <p>
         Retinal ganglion cells (RGCs) are a type of neuron in the eye that
         receive information from photoreceptors via two intermediary neuron
         types, bipolar cells and amacrine cells.
       </p>
+
       <p>
         One RGC receives input from multiple photoreceptors, and this makes up
         the RGC's receptive field. When photoreceptors in the center of this
@@ -47,6 +52,7 @@
         send inhibitory signals to the RGC when they detect more light, trying
         to get it to not fire.
       </p>
+
       <figure>
         <img
           src="/public/retinal-ganglion-cells.svg"
@@ -57,6 +63,7 @@
           ganglion cell
         </figcaption>
       </figure>
+
       <p>
         Because of this, the intersections have more areas of intense luminosity
         around them compared to points in the middle of a grid line. The
@@ -64,6 +71,14 @@
         photoreceptors at the edges of a receptive field, causing it to be less
         activated, and thus the area of vision it controls appears darker.
       </p>
+
+      <figure>
+        <img
+          src="/public/luminosity-pre.svg"
+          alt="Visual explanation of lateral inhibition"
+        />
+        <figcaption>Visual explanation of lateral inhibition</figcaption>
+      </figure>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
