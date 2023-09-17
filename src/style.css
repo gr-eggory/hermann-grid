@@ -43,6 +43,16 @@ canvas {
   background-color: white;
 }
 
+.inputs-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
 figure {
   width: 50vw;
   max-width: 600px;
