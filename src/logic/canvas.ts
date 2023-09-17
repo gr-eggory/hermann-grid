@@ -18,6 +18,8 @@ export const drawGrid = (
 ) => {
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   const { squareDimension = 80, gap = 15 } = config;
 
   const amountOfSquaresX = Math.floor(canvas.width / (squareDimension + gap));
@@ -44,4 +46,19 @@ export const setupHermanGrid = (canvas: HTMLCanvasElement) => {
     resizeCanvas(canvas);
     drawGrid(canvas);
   });
+};
+
+export const updateHermanGrid = (
+  event: Event,
+  canvas: HTMLCanvasElement,
+  config: HermannGridConfig
+) => {
+  const target = event.target as HTMLInputElement;
+  const name = target.name;
+  const value = Number(target.value);
+  if (name === "squareDimension" || name === "gap") {
+    config[name] = value;
+  }
+
+  drawGrid(canvas, config);
 };
